@@ -1,0 +1,64 @@
+/* src/components/HowItWorks.css */
+
+.how-it-works {
+  padding: 50px 20px;
+  text-align: center;
+  background-color: #f9f9f9;
+}
+
+.how-it-works h2 {
+  font-size: 2.5rem;
+  margin-bottom: 30px;
+  color: #333;
+}
+
+.flowchart {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.step {
+  margin-bottom: 20px;
+}
+
+.step img {
+  width: 100%;
+  max-width: 100px;
+  height: auto;
+  margin-bottom: 10px;
+}
+
+.step p {
+  font-size: 1.2rem;
+  color: #666;
+}
+
+/* Responsive Adjustments */
+@media (max-width: 768px) {
+  .how-it-works {
+    padding: 30px 15px;
+  }
+
+  .how-it-works h2 {
+    font-size: 2rem;
+  }
+
+  .step img {
+    max-width: 80px;
+  }
+
+  .step p {
+    font-size: 1rem;
+  }
+}
+
+@media (max-width: 576px) {
+  .step img {
+    max-width: 60px;
+  }
+
+  .step p {
+    font-size: 0.9rem;
+  }
+}

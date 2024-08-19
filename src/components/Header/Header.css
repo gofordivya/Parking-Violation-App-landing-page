@@ -1,0 +1,22 @@
+/* src/components/Header.css */
+
+.header-navbar {
+  margin-bottom: 20px;
+}
+
+.navbar-logo img {
+  height: 40px;
+}
+
+.navbar-links {
+  margin-left: auto; /* This pushes the nav links to the right */
+}
+
+.navbar-links .nav-link {
+  margin-left: 20px;
+  color: white;
+}
+
+.navbar-links .nav-link:hover {
+  color: lightgray;
+}

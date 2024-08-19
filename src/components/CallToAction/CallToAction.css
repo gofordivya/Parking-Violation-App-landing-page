@@ -1,0 +1,48 @@
+/* src/components/CallToAction.css */
+
+.cta-section {
+  position: relative; /* Ensure the section can contain the overlay */
+  background-image: url("../../assets/images/cityscape.png");
+  background-size: cover;
+  background-position: center;
+  padding: 80px 20px;
+  text-align: center;
+  color: white;
+  overflow: hidden; /* Prevent the pseudo-element from overflowing */
+}
+
+.cta-section::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.7); /* Dark grey overlay with 70% opacity */
+  z-index: 1; /* Place the overlay below the content */
+}
+
+.cta-section h2,
+.cta-button {
+  position: relative;
+  z-index: 2; /* Ensure content appears above the overlay */
+}
+
+.cta-section h2 {
+  font-size: 2.5em;
+  margin-bottom: 20px;
+}
+
+.cta-button {
+  background-color: #5db9c5;
+  color: white;
+  font-size: 1.5em;
+  padding: 15px 30px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.cta-button:hover {
+  background-color: #45a049;
+}

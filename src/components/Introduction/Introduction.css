@@ -1,0 +1,30 @@
+/* src/components/Introduction.css */
+
+.introduction {
+  display: flex;
+  padding: 50px;
+  background-color: #f5f5f5;
+}
+
+.introduction-left {
+  flex: 1;
+  padding-right: 20px;
+}
+
+.introduction-right {
+  flex: 1;
+}
+
+.introduction-right img {
+  width: 100%;
+  height: auto;
+}
+
+.introduction-left h2 {
+  font-size: 2.5em;
+  font-weight: bold;
+}
+
+.introduction-left p {
+  font-size: 1.2em;
+}

@@ -1,0 +1,22 @@
+/* src/components/Weather.css */
+
+.weather-section {
+  padding: 40px;
+  background-size: cover;
+  background-position: center;
+  color: white;
+  text-align: center;
+}
+.weather-container {
+  background-image: url("../../assets/images/image.png");
+}
+
+.weather-section h2 {
+  font-size: 2em;
+  color: #fff;
+}
+
+.weather-section #weather-report {
+  font-size: 1.2em;
+  color: #e9ecef;
+}
