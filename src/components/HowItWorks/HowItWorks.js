@@ -1,31 +1,36 @@
 import React from "react";
 import "./HowItWorks.css";
-import ScanLicense from "../../assets/images/HowItWorks/1.png";
-import ParkingViolation from "../../assets/images/HowItWorks/2.png";
-import Notice from "../../assets/images/HowItWorks/3.png";
-import CheckStatus from "../../assets/images/HowItWorks/check-status.png";
+import mockupImage from "../../assets/images/HowItWorks/mockup.png"; // Ensure the correct path to your image
 
 const HowItWorks = () => {
   return (
     <div className="how-it-works">
-      <h2>How It Works</h2>
-      <div className="flowchart">
+      <div className="steps">
+        <h2>How It Works</h2>
         <div className="step">
-          <img src={ScanLicense} alt="Scan License Plates" />
-          <p>Scan License Plates</p>
+          <h3>Step 1: Scan License Plates</h3>
+          <p>
+            Use the app to scan the license plate of the vehicle in the Smart
+            Zone.
+          </p>
         </div>
         <div className="step">
-          <img src={ParkingViolation} alt="Check Booking Status" />
-          <p>Check Booking Status</p>
+          <h3>Step 2: Check Booking Status</h3>
+          <p>
+            The app will automatically check if the vehicle has a valid booking
+            for the Smart Zone.
+          </p>
         </div>
         <div className="step">
-          <img src={CheckStatus} alt="Penalize Violations" />
-          <p>Penalize Violations</p>
+          <h3>Step 3: Report Violations</h3>
+          <p>
+            If the vehicle is in violation, generate a report directly from the
+            app.
+          </p>
         </div>
-        <div className="step">
-          <img src={Notice} alt="Access Real-Time Data" />
-          <p>Access Real-Time Data</p>
-        </div>
+      </div>
+      <div className="mockup-image">
+        <img src={mockupImage} alt="App Mockup" />
       </div>
     </div>
   );

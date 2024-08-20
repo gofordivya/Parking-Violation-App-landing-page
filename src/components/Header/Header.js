@@ -1,11 +1,11 @@
 import React from "react";
 import { Navbar, Nav, Container } from "react-bootstrap";
 import "./Header.css";
-import Logo from "../../assets/images/Background.png";
+import Logo from "../../assets/images/Header/logo.png";
 
 const Header = () => {
   return (
-    <Navbar bg="dark" variant="dark" expand="lg" className="header-navbar">
+    <Navbar expand="lg" className="header-navbar">
       <Container>
         <Navbar.Brand href="#home" className="navbar-logo">
           <img src={Logo} alt="Logo" height="40" />

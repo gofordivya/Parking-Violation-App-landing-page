@@ -26,13 +26,13 @@ const Weather = () => {
   }, []);
 
   return (
-    <Container fluid className="weather-container text-white text-center py-5">
+    <Container fluid className="weather-container text-center py-5">
       <Row>
         <Col>
           <h2>Current Weather in Amsterdam</h2>
-          {error && <p>Error: {error}</p>}
+          {error && <p className="error">Error: {error}</p>}
           {weather ? (
-            <div>
+            <div id="weather-report">
               <p>Temperature: {(weather.main.temp - 273.15).toFixed(2)} °C</p>
               <p>Weather: {weather.weather[0].description}</p>
             </div>

@@ -1,64 +1,70 @@
 /* src/components/HowItWorks.css */
 
 .how-it-works {
-  padding: 50px 20px;
-  text-align: center;
-  background-color: #f9f9f9;
-}
-
-.how-it-works h2 {
-  font-size: 2.5rem;
-  margin-bottom: 30px;
-  color: #333;
-}
-
-.flowchart {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
+  align-items: center;
+  padding: 50px;
+  background-color: #f9f9f9; /* Light Gray for Background */
 }
 
-.step {
+.steps {
+  flex: 1;
+  padding-right: 20px;
+}
+
+.steps h2 {
+  font-size: 2.5em;
+  font-family: "Rajdhani", sans-serif;
+  font-weight: 600; /* Semi Bold */
+  color: #575a9c; /* Tertiary Purple */
   margin-bottom: 20px;
 }
 
-.step img {
-  width: 100%;
-  max-width: 100px;
+.steps .step {
+  margin-bottom: 20px;
+}
+
+.steps .step h3 {
+  font-size: 1.5em;
+  color: #575a9c; /* Tertiary Purple */
+  font-family: "Roboto", sans-serif;
+  font-weight: 500; /* Medium */
+}
+
+.steps .step p {
+  font-size: 1.1em;
+  color: #1d1e26; /* Primary Black */
+  font-family: "Roboto", sans-serif;
+  font-weight: 300; /* Light */
+}
+
+.mockup-image {
+  flex: 1;
+  text-align: center;
+}
+
+.mockup-image img {
+  max-width: 100%;
   height: auto;
-  margin-bottom: 10px;
+  border-radius: 10px;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
 }
 
-.step p {
-  font-size: 1.2rem;
-  color: #666;
-}
-
-/* Responsive Adjustments */
+/* Responsive Design */
 @media (max-width: 768px) {
   .how-it-works {
-    padding: 30px 15px;
+    flex-direction: column;
+    text-align: center;
   }
 
-  .how-it-works h2 {
-    font-size: 2rem;
+  .steps {
+    padding-right: 0;
+    margin-bottom: 30px;
   }
 
-  .step img {
-    max-width: 80px;
-  }
-
-  .step p {
-    font-size: 1rem;
-  }
-}
-
-@media (max-width: 576px) {
-  .step img {
-    max-width: 60px;
-  }
-
-  .step p {
-    font-size: 0.9rem;
+  .mockup-image {
+    text-align: center;
   }
 }

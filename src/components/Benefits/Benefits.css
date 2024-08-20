@@ -5,18 +5,52 @@
   grid-template-columns: repeat(4, 1fr);
   gap: 20px;
   padding: 50px;
+  background-color: #e8e7f3; /* Light Purple Background */
 }
 
 .benefit-item {
   text-align: center;
+  padding: 20px;
+  background-color: #ffffff; /* Secondary White */
+  border-radius: 10px;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
 }
 
 .benefit-item img {
   width: 50px;
   height: 50px;
+  margin-bottom: 15px;
 }
 
 .benefit-item h3 {
-  margin-top: 10px;
-  font-size: 1.2em;
+  font-size: 1.5em;
+  font-family: "Rajdhani", sans-serif;
+  font-weight: 600; /* Semi Bold */
+  color: #575a9c; /* Tertiary Purple */
+  margin-bottom: 10px;
+}
+
+.benefit-item p {
+  font-size: 1.1em;
+  color: #1d1e26; /* Primary Black */
+  font-family: "Roboto", sans-serif;
+  font-weight: 300; /* Light */
+}
+
+/* Responsive Design */
+@media (max-width: 1024px) {
+  .benefits {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 768px) {
+  .benefits {
+    grid-template-columns: 1fr;
+    padding: 20px;
+  }
+
+  .benefit-item {
+    margin-bottom: 20px;
+  }
 }

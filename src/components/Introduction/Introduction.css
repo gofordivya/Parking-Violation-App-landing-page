@@ -2,8 +2,11 @@
 
 .introduction {
   display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
   padding: 50px;
-  background-color: #f5f5f5;
+  background-color: #f9f9f9; /* Light Gray for Background */
 }
 
 .introduction-left {
@@ -11,20 +14,28 @@
   padding-right: 20px;
 }
 
+.introduction-left h2 {
+  font-size: 2.5em;
+  font-family: "Rajdhani", sans-serif;
+  font-weight: 600; /* Semi Bold */
+  color: #575a9c; /* Tertiary Purple */
+  margin-bottom: 20px;
+}
+
+.introduction-left p {
+  font-size: 1.2em;
+  color: #1d1e26; /* Primary Black */
+  font-family: "Roboto", sans-serif;
+  font-weight: 300; /* Light */
+}
+
 .introduction-right {
   flex: 1;
 }
 
 .introduction-right img {
-  width: 100%;
+  max-width: 100%;
   height: auto;
-}
-
-.introduction-left h2 {
-  font-size: 2.5em;
-  font-weight: bold;
-}
-
-.introduction-left p {
-  font-size: 1.2em;
+  border-radius: 10px;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
 }

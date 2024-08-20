@@ -1,7 +1,8 @@
 /* src/components/Header.css */
 
 .header-navbar {
-  margin-bottom: 20px;
+  background-color: #1d1e26; /* Primary Black */
+  padding: 10px 20px;
 }
 
 .navbar-logo img {
@@ -9,14 +10,16 @@
 }
 
 .navbar-links {
-  margin-left: auto; /* This pushes the nav links to the right */
+  margin-left: auto; /* This pushes the navigation links to the right */
 }
 
 .navbar-links .nav-link {
   margin-left: 20px;
-  color: white;
+  color: #ffffff; /* Secondary White */
+  font-family: "Rajdhani", sans-serif;
+  font-weight: 600; /* Semi Bold */
 }
 
 .navbar-links .nav-link:hover {
-  color: lightgray;
+  color: #575a9c; /* Tertiary Purple */
 }

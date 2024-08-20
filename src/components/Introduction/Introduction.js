@@ -1,6 +1,6 @@
 import React from "react";
 import "./Introduction.css";
-import LicensePlate from "../../assets/images/licenseplate.jpg";
+import LicensePlate from "../../assets/images/Introduction/licenseplate.jpg";
 
 const Introduction = () => {
   return (
