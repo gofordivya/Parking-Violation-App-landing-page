@@ -1,7 +1,5 @@
-/* src/components/Hero.css */
-
 .hero {
-  background-image: url("../../assets/images/cityscape.png"); /* Assuming the image is in src/assets/images */
+  background-image: url("../../assets/images/cityscape.png");
   background-size: cover;
   background-position: center;
   height: 500px;
