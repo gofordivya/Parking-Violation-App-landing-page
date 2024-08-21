@@ -8,15 +8,12 @@ import "./InteractiveMap.css";
 
 const InteractiveMap = () => {
   useEffect(() => {
-    // Initialize the map
     let map = L.map("map").setView([52.3676, 4.9041], 13);
 
-    // Add the tile layer to the map
     L.tileLayer("https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png", {
       attribution: "&copy; OpenStreetMap contributors",
     }).addTo(map);
 
-    // Create the default icon
     const defaultIcon = L.icon({
       iconUrl: markerIconPng,
       shadowUrl: markerShadowPng,
@@ -26,13 +23,11 @@ const InteractiveMap = () => {
       shadowSize: [41, 41],
     });
 
-    // Add a marker with the default icon to the map
     L.marker([52.3676, 4.9041], { icon: defaultIcon })
       .addTo(map)
       .bindPopup("Smart Zone - Amsterdam")
       .openPopup();
 
-    // Cleanup function to remove the map instance
     return () => {
       if (map) {
         map.remove();

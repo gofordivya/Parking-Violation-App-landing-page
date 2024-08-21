@@ -1,14 +1,12 @@
-/* src/components/CallToAction.css */
-
 .cta-section {
-  position: relative; /* Ensure the section can contain the overlay */
-  background-image: url("../../assets/images/cityscape.png"); /* Background image */
+  position: relative;
+  background-image: url("../../assets/images/cityscape.png");
   background-size: cover;
   background-position: center;
   padding: 80px 20px;
   text-align: center;
   color: white;
-  overflow: hidden; /* Prevent the pseudo-element from overflowing */
+  overflow: hidden;
 }
 
 .cta-section::before {
@@ -18,31 +16,26 @@
   left: 0;
   width: 100%;
   height: 100%;
-  background-color: rgba(
-    29,
-    30,
-    38,
-    0.7
-  ); /* Dark overlay using Primary Black with 70% opacity */
-  z-index: 1; /* Place the overlay below the content */
+  background-color: rgba(29, 30, 38, 0.7);
+  z-index: 1;
 }
 
 .cta-section h2,
 .cta-button {
   position: relative;
-  z-index: 2; /* Ensure content appears above the overlay */
+  z-index: 2;
 }
 
 .cta-section h2 {
   font-size: 2.5em;
   font-family: "Rajdhani", sans-serif;
-  font-weight: 600; /* Semi Bold */
+  font-weight: 600;
   margin-bottom: 20px;
-  color: #ffffff; /* Secondary White */
+  color: #ffffff;
 }
 
 .cta-button {
-  background-color: #575a9c; /* Tertiary Purple */
+  background-color: #575a9c;
   color: white;
   font-size: 1.5em;
   padding: 15px 30px;
@@ -54,5 +47,5 @@
 }
 
 .cta-button:hover {
-  background-color: #783f92; /* Darker shade of Tertiary Purple */
+  background-color: #783f92;
 }

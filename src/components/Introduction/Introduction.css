@@ -1,12 +1,10 @@
-/* src/components/Introduction.css */
-
 .introduction {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
   align-items: center;
   padding: 50px;
-  background-color: #f9f9f9; /* Light Gray for Background */
+  background-color: #f9f9f9;
 }
 
 .introduction-left {
@@ -17,16 +15,16 @@
 .introduction-left h2 {
   font-size: 2.5em;
   font-family: "Rajdhani", sans-serif;
-  font-weight: 600; /* Semi Bold */
-  color: #575a9c; /* Tertiary Purple */
+  font-weight: 600;
+  color: #575a9c;
   margin-bottom: 20px;
 }
 
 .introduction-left p {
   font-size: 1.2em;
-  color: #1d1e26; /* Primary Black */
+  color: #1d1e26;
   font-family: "Roboto", sans-serif;
-  font-weight: 300; /* Light */
+  font-weight: 300;
 }
 
 .introduction-right {

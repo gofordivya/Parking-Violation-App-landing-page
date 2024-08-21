@@ -1,17 +1,15 @@
-/* src/components/Benefits.css */
-
 .benefits {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
   gap: 20px;
   padding: 50px;
-  background-color: #e8e7f3; /* Light Purple Background */
+  background-color: #e8e7f3;
 }
 
 .benefit-item {
   text-align: center;
   padding: 20px;
-  background-color: #ffffff; /* Secondary White */
+  background-color: #ffffff;
   border-radius: 10px;
   box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
 }
@@ -25,19 +23,18 @@
 .benefit-item h3 {
   font-size: 1.5em;
   font-family: "Rajdhani", sans-serif;
-  font-weight: 600; /* Semi Bold */
-  color: #575a9c; /* Tertiary Purple */
+  font-weight: 600;
+  color: #575a9c;
   margin-bottom: 10px;
 }
 
 .benefit-item p {
   font-size: 1.1em;
-  color: #1d1e26; /* Primary Black */
+  color: #1d1e26;
   font-family: "Roboto", sans-serif;
-  font-weight: 300; /* Light */
+  font-weight: 300;
 }
 
-/* Responsive Design */
 @media (max-width: 1024px) {
   .benefits {
     grid-template-columns: repeat(2, 1fr);

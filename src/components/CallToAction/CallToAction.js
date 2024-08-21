@@ -2,7 +2,6 @@ import React from "react";
 import "./CallToAction.css";
 
 const CallToAction = () => {
-  // URL for Google Calendar Event Creation
   const googleCalendarUrl =
     "https://calendar.google.com/calendar/u/0/r/eventedit";
 

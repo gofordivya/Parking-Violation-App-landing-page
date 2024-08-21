@@ -3,7 +3,7 @@ import { Container, Row, Col } from "react-bootstrap";
 import "./Weather.css";
 
 const Weather = () => {
-  const [weather, setWeather] = useState(null);
+  const [weather, setWeather] = useState(null); // The initial state for both weather and error is set to null.
   const [error, setError] = useState(null);
 
   useEffect(() => {
@@ -37,7 +37,7 @@ const Weather = () => {
               <p>Weather: {weather.weather[0].description}</p>
             </div>
           ) : (
-            !error && <p>Loading...</p>
+            !error && <p> Something went wrong...</p>
           )}
         </Col>
       </Row>
